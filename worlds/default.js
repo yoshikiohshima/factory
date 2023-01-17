@@ -373,6 +373,7 @@ export function init(Constants) {
                 dataLocation: "3xPWaDNEJokKGvHfdMSKcBW5v43G3vImvojJebDXkFpgEAwMCAtCV1ceERQdC1YNC1YbChcJDR0MVhEXVw1XPxwuGgEUMQs5EykbOiAcSz8AGQ4BDy0zLyEhSlcRF1YbChcJDR0MVhURGwoXDh0KCx1XHxs3SxMtTyIdVQgsHQ8ZHh0xHD4eNAISMTBKIBoANT4hLStNCkkIPj4PLVccGQwZVzwiDR00C08VDB8sLhMRNCdADEBLH0gzDh07Gi4qF0k-Pw0zFhFIKi8vTyk",
                 modelType: "glb",
                 dataScale: [1.2, 1.2, 1.2],
+                openPortalURL: "https://croquet.io/gallery/",
                 behaviorModules: ["OpenArtGalleryPortalButton"],
                 type: "3d",
             }
