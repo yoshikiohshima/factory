@@ -25,6 +25,7 @@ export function init(Constants) {
                 shadow: true,
                 singleSided: true,
                 type: "3d",
+                envMapIntensity: 1.0,
                 placeholder: true,
                 placeholderSize: [400, 14, 400],
                 placeholderColor: 0x808080,
@@ -40,6 +41,7 @@ export function init(Constants) {
                 dataLocation: "3OF2-s4U1ZOJduGATmLEIXo1iTkQHd5ZBknKgL5SvqpQJzs7Pzx1YGApJiMqPGE6PGEsPSA-Oio7YSYgYDpgCCsZLTYjBjwOJB4sDRcrfAg3Ljk2OBoEGBYWfWAmIGEsPSA-Oio7YSImLD0gOSo9PCpgPwB9AAIIISx8YiYneScqKyQaIisNLHkaGT8YKg56JQwQfHstPiNiGQ49e2ArLjsuYCMBPgMiCQt3OQskGhcleSp9HQIIfXseHgo7EAo9CB48FRwpegsCLH4OIwY",
                 fileName: "/abandoned_parking_4k.jpg",
                 dataType: "jpg",
+                toneMappingExposure: 1.6
             }
         },
         {
@@ -87,8 +89,8 @@ export function init(Constants) {
                 type: "text",
                 runs: [{text: "Lateral Crane Controller"}],
                 margins: {left: 15, top: 48, right: 10, bottom: 0},
-                backgroundColor: 0x707070,
-                color: 0xB0841B,
+                backgroundColor: 0xb0b0b0,
+                color: 0xf1b62a,
                 frameColor: 0x222222,
                 width: 3.4,
                 height: 1,
@@ -360,7 +362,7 @@ export function init(Constants) {
                 rotation: [0, -0.9837726947014075, 0, 0.1794192998535309],
                 type: "object",
                 scale: [0.3, 0.3, 0.3],
-                behaviorModules: ["Elected", "FlightTracker", "Spin"],
+                behaviorModules: ["Elected", "Earth", "FlightTracker", "Spin"],
                 layers: ["pointer"],
                 color: 0xaaaaaa,
             }
@@ -373,7 +375,6 @@ export function init(Constants) {
                 dataLocation: "3xPWaDNEJokKGvHfdMSKcBW5v43G3vImvojJebDXkFpgEAwMCAtCV1ceERQdC1YNC1YbChcJDR0MVhEXVw1XPxwuGgEUMQs5EykbOiAcSz8AGQ4BDy0zLyEhSlcRF1YbChcJDR0MVhURGwoXDh0KCx1XHxs3SxMtTyIdVQgsHQ8ZHh0xHD4eNAISMTBKIBoANT4hLStNCkkIPj4PLVccGQwZVzwiDR00C08VDB8sLhMRNCdADEBLH0gzDh07Gi4qF0k-Pw0zFhFIKi8vTyk",
                 modelType: "glb",
                 dataScale: [1.2, 1.2, 1.2],
-                openPortalURL: "https://croquet.io/gallery/",
                 behaviorModules: ["OpenArtGalleryPortalButton"],
                 type: "3d",
             }

@@ -17,8 +17,6 @@ class OpenArtGalleryPortalActor {
         if (this.hasOpened) {return;}
         this.hasOpened = true;
 
-        let portalURL = this._cardData.openPortalURL || "https://croquet.io/gallery/";
-
         this.createCard({
             translation: [0, 4.1, 39],
             rotation: [0, 0, 0],
@@ -28,7 +26,7 @@ class OpenArtGalleryPortalActor {
             cornerRadius: 0.05,
             depth: 0.05,
             frameColor: 8947848,
-            portalURL,
+            portalURL: "?world=default",
             type: "2d",
             width: 1.8,
             height: 2.4,
