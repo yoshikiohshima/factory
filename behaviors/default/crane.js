@@ -352,7 +352,7 @@ class CraneButtonPawn {
             }
 
             let geometry = new Microverse.THREE.ExtrudeGeometry(shape, extrudeSettings);
-            let material = new Microverse.THREE.MeshStandardMaterial({color: this.actor._cardData.color || 0xD86508});
+            let material = new Microverse.THREE.MeshStandardMaterial({color: this.actor._cardData.color || 0xeda932});
             this.obj = new Microverse.THREE.Mesh(geometry, material);
             this.obj.castShadow = this.actor._cardData.shadow;
             this.obj.receiveShadow = this.actor._cardData.shadow;
