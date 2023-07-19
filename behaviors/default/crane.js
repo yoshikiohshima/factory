@@ -185,7 +185,6 @@ class CraneActor {
             parent: this,
             behaviorModules: ["CraneLink"],
         });
-
     }
 
     removeObjects() {

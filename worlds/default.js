@@ -81,7 +81,7 @@ export function init(Constants) {
         },
         {
             card: {
-                name:"crane explanation",
+                name: "crane explanation",
                 className: "TextFieldActor",
                 translation: [5.875421017365224, 4.38622377915, 30.394897079467775],
                 rotation: [0, 0, 0],
@@ -90,7 +90,7 @@ export function init(Constants) {
                 runs: [{text: "Lateral Crane Controller"}],
                 margins: {left: 15, top: 48, right: 10, bottom: 0},
                 backgroundColor: 0xb0b0b0,
-                color: 0xf1b62a,
+                color: 0xf1d61a,
                 frameColor: 0x222222,
                 width: 3.4,
                 height: 1,
