@@ -26,7 +26,7 @@ class OpenArtGalleryPortalActor {
             cornerRadius: 0.05,
             depth: 0.05,
             frameColor: 8947848,
-            portalURL: "?world=default",
+            portalURL: "../gallery",
             type: "2d",
             width: 1.8,
             height: 2.4,
