@@ -1,4 +1,13 @@
-class ConveyorBoxActor {
+// the following import statement is solely for the type checking and
+// autocompletion features in IDE.  A Behavior cannot inherit from
+// another behavior or a base class but can use the methods and
+// properties of the card to which it is installed.
+// The prototype classes ActorBehavior and PawnBehavior provide
+// the features defined at the card object.
+
+import {ActorBehavior, PawnBehavior} from "../PrototypeBehavior";
+
+class ConveyorBoxActor extends ActorBehavior {
   setup() {
     this.startPoint = [22.96199715067616, 0, 30.90992622375488];
     if (this.running === undefined) {

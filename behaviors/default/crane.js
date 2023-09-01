@@ -13,7 +13,16 @@
     (let s = [0.1, 2.3])
 */
 
-class CraneActor {
+// the following import statement is solely for the type checking and
+// autocompletion features in IDE.  A Behavior cannot inherit from
+// another behavior or a base class but can use the methods and
+// properties of the card to which it is installed.
+// The prototype classes ActorBehavior and PawnBehavior provide
+// the features defined at the card object.
+
+import {ActorBehavior, PawnBehavior} from "../PrototypeBehavior";
+
+class CraneActor extends ActorBehavior {
     setup() { // Start With Logic, Continue With Physics Implementation
         if (!this.physicsWorld) {
             let physicsManager = this.service("PhysicsManager");
@@ -212,7 +221,7 @@ class CraneActor {
     }
 }
 
-class CranePawn {
+class CranePawn extends PawnBehavior {
     setup() {
         if (this.obj) {
             [...this.shape.children].forEach((o) => this.shape.remove(o));
@@ -225,7 +234,7 @@ class CranePawn {
     }
 }
 
-class CraneLinkActor {
+class CraneLinkActor extends ActorBehavior {
     setup() {
         if (this._cardData.craneHandlesEvent) {
             this.subscribe("craneLink", "handlePhysics", "handlePhysics");
@@ -254,7 +263,7 @@ class CraneLinkActor {
     }
 }
 
-class CraneLinkPawn {
+class CraneLinkPawn extends PawnBehavior {
     setup() {
 
         /*
@@ -283,7 +292,7 @@ class CraneLinkPawn {
     }
 }
 
-class CraneButtonActor { // Buttons Move Crane
+class CraneButtonActor extends ActorBehavior { // Buttons Move Crane
     setup() {
         this.occupier = undefined;
         this.listen("publishMove", "publishMove");
@@ -316,7 +325,7 @@ class CraneButtonActor { // Buttons Move Crane
     }
 }
 
-class CraneButtonPawn {
+class CraneButtonPawn extends PawnBehavior {
     setup() {
         [...this.shape.children].forEach((c) => this.shape.remove(c));
 

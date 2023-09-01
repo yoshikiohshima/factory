@@ -1,4 +1,13 @@
-class ForkLiftActor {
+// the following import statement is solely for the type checking and
+// autocompletion features in IDE.  A Behavior cannot inherit from
+// another behavior or a base class but can use the methods and
+// properties of the card to which it is installed.
+// The prototype classes ActorBehavior and PawnBehavior provide
+// the features defined at the card object.
+
+import {ActorBehavior, PawnBehavior} from "../PrototypeBehavior";
+
+class ForkLiftActor extends ActorBehavior {
     setup() {
         this.paths = [
             [

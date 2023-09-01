@@ -1,4 +1,13 @@
-class DroneAssemblyActor {
+// the following import statement is solely for the type checking and
+// autocompletion features in IDE.  A Behavior cannot inherit from
+// another behavior or a base class but can use the methods and
+// properties of the card to which it is installed.
+// The prototype classes ActorBehavior and PawnBehavior provide
+// the features defined at the card object.
+
+import {ActorBehavior, PawnBehavior} from "../PrototypeBehavior";
+
+class DroneAssemblyActor extends ActorBehavior {
     setup() {
         if (this._cardData.createDrones) { this.droneCount = 0; this.future(5000).newDrone(); } // Create More Drones Behind
 
