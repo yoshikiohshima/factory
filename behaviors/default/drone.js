@@ -17,7 +17,7 @@ class DroneAssemblyActor extends ActorBehavior {
             ["forwardBy", 1.600], ["arcBy", -Math.PI / 2, Math.PI / 256], ["forwardBy", 23.900], ["arcBy", -(.255 * Math.PI), Math.PI / 800], ["forwardBy", 8.000],
             ["updateCard", "./assets/3d/DroneLine2.glb"],
             ["forwardBy", 5.925], ["arcBy", (.255 * Math.PI), Math.PI / 800], ["forwardBy", 20.475], ["arcBy", -Math.PI / 2, Math.PI / 400], ["forwardBy", 24.800], ["arcBy", Math.PI, Math.PI / 356], ["forwardBy", 12.500],
-            ["updateCard", "./assets/3d/DroneLine3.glb"],
+            ["updateCard", "./assets/3d/DroneLine3.glb"]];
         this.speed = 10.0; // (Meters / Second) Speed
 
         this.updateTask();
