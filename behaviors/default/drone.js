@@ -13,11 +13,11 @@ class DroneAssemblyActor extends ActorBehavior {
 
         this.path = [
             ["forwardBy", 3.425], ["arcBy", Math.PI / 2, Math.PI / 256], ["forwardBy", 43.450], // Tasks
-            ["updateCard", "3yFBJf8lDIU6R5bsWCQlKzjHBxRgpW1BiyYT8x-MuNJ0EQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWOiExMx89NhQMMB8QPCAWFjcgDikvADYbEkkfS1YaFhRXHAEYFAkVHFcNCxwPFgtXFAAUEBoLFg8cCwocVk4yAw0hAx8KERs1PThUFUg0ESlALTg7LTQPFB42ABAcFi81TD4jLjFJVDxWHRgNGFYPATUcCCYbEkAoH0FLDTM0PjE1GjE2KE4VFDNBNxEcTkEvMwweACE1HCY4"],
+            ["updateCard", "./assets/3d/DroneLine1.glb"],
             ["forwardBy", 1.600], ["arcBy", -Math.PI / 2, Math.PI / 256], ["forwardBy", 23.900], ["arcBy", -(.255 * Math.PI), Math.PI / 800], ["forwardBy", 8.000],
-            ["updateCard", "3y1A3wM6kc2r6u5X8bV8eIrNivz_tl5R8mvab6XNFyMcEQ0NCQpDVlYfEBUcClcMClcaCxYIDBwNVxAWVgxWOiExMx89NhQMMB8QPCAWFjcgDikvADYbEkkfS1YaFhRXHAEYFAkVHFcNCxwPFgtXFAAUEBoLFg8cCwocVkkcLD0fVAkeOh42TyAVNh0NKQA6FgANPxs_MCxLSkkmQBFAPEoWLDUJPSxWHRgNGFYPLxcUHjYIGAM7TDgOEDogE08xTSoyHR0KEhQqHTEcATVLETA1PyE8Cx0o"],
+            ["updateCard", "./assets/3d/DroneLine2.glb"],
             ["forwardBy", 5.925], ["arcBy", (.255 * Math.PI), Math.PI / 800], ["forwardBy", 20.475], ["arcBy", -Math.PI / 2, Math.PI / 400], ["forwardBy", 24.800], ["arcBy", Math.PI, Math.PI / 356], ["forwardBy", 12.500],
-            ["updateCard", "3fjxwcHfliOtrDpzSZL7og3Lliqr9FCszd4iO0AaOgfEDhISFhVcSUkADwoDFUgTFUgFFAkXEwMSSA8JSRNJJT4uLAAiKQsTLwAPIz8JCSg_ETYwHykEDVYAVEkFCQtIAx4HCxYKA0gSFAMQCRRICx8LDwUUCRADFBUDSS42ISsFLwIfKyoQIAsXUwI5Eg5UAxwiPgA5URI_MQUkKl9RP1YoCDEtAhVJAgcSB0kBPwgjHDMzXj8IDhIoMSJSJR5XFwteLSAuUykrDgsyARQlDQkANA1QIiMn"]];
+            ["updateCard", "./assets/3d/DroneLine3.glb"],
         this.speed = 10.0; // (Meters / Second) Speed
 
         this.updateTask();
@@ -89,7 +89,7 @@ class DroneAssemblyActor extends ActorBehavior {
             translation: [53.48163857202977, 7.270324118143472, 30.903151540772612], // translation: [50.709776263247214, 7.270324118143472, 25.427818377798733],
             rotation: [0, -Math.PI / 2, 0],
             dataScale: [1.6, 1.6, 1.6],
-            dataLocation: "3GoJXGTqvuBdqaRBcIHp0qF_hCs14s_uw54cQONX7Nm0LzMzNzR9aGghLisiNGkyNGkkNSg2MiIzaS4oaDJoBB8PDSEDCCoyDiEuAh4oKAkeMBcRPgglLHchdWgkKCppIj8mKjcrImkzNSIxKDVpKj4qLiQ1KDEiNTQiaA90MhZ-JAt-PRNyPjMKIhI2KQYWLQMMDhATKA8QIQkXKQsQHxFwCSoQNw5oIyYzJmgDfgQhFXd_cDN-EwMOEiIuKxQKMHIPEj8yJi8Vdj8SFDErLiMJMCgODS4g",
+            dataLocation: "./assets/3d/drone.glb",
             behaviorModules: ["DroneAssembly"],
             modelType: "glb",
             shadow: true,
