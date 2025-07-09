@@ -38,7 +38,7 @@ export function init(Constants) {
                 layers: ["light"],
                 type: "lighting",
                 behaviorModules: ["Light"],
-                dataLocation: "./assets/skey/abandoned_parking_4k.jpg",
+                dataLocation: "./assets/sky/abandoned_parking_4k.jpg",
                 fileName: "/abandoned_parking_4k.jpg",
                 dataType: "jpg",
                 toneMappingExposure: 1.6
