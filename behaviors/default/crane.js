@@ -45,7 +45,7 @@ class CraneActor extends ActorBehavior {
             dataScale: [3.384158349075, 3.384158349075, 3.384158349075],
             parent: this,
             modelType: "glb",
-            dataLocation: "35H7xJVLhQNFxNMt5HZigey3PXGNeREIgL3fy_PNJaOsXUFBRUYPGhpTXFlQRhtARhtWR1pEQFBBG1xaGkAadm19f1NxelhAfFNccGxaWntsQmVjTHpXXgVTBxpWWlgbUE1UWEVZUBtBR1BDWkcbWExYXFZHWkNQR0ZQGmABZQcHckV0cnJDXlRReGB3B3JMam0DeUwEGGENWgNhZAxaB1NgWUB0B2waUVRBVBpDQGJqeEV7ZmNQc2JZAWIHAndQVEZ8fURQY0NlBmp_UAd-DH9FZXRXUkRC",
+            dataLocation: "./assets/3d/crane_Base.glb",
             behaviorModules: ["Physics", "CraneLink"],
             craneHandlesEvent: true,
             noSave: true,
@@ -93,7 +93,7 @@ class CraneActor extends ActorBehavior {
                     parent: this,
                     type: "3d",
                     modelType: "glb",
-                    dataLocation: "3DXL69tRPG3TIGu1pGwQ8THC_ykY41jJOqMYGH8DInacLDAwNDd-a2siLSghN2oxN2onNis1MSEwai0razFrBxwMDiIACykxDSItAR0rKwodMxQSPQsmL3QidmsnKylqITwlKTQoIWowNiEyKzZqKT0pLSc2KzIhNjchayJ3HnYwcQcnCgp0cCAcJQtpFC0lAHEVHAI-MBEdLSUWciYrDRN2aRMhFR1rICUwJWssaSMcDXI1DgcdITMuHH0cLi0WdxRzKwk8KXB1MgkdKyEgLBR3cjUsdDcd",
+                    dataLocation: "./assets/3d/crane_Hook.glb",
                     behaviorModules: ["Physics", "CraneLink"],
                     craneHandlesEvent: true, // To Add Movement Physics
                     craneProto: true, // Since GLB Exists
